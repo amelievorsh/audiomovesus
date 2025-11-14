@@ -32,7 +32,7 @@ function draw() {
   for (let z = -150; z < 150; z += 2) {
     fill((z + frameCount*15) % 20, 100, 100);
   }
-  torus(60, amplitude * 120, 20);
+  torus(30, amplitude * 9, 20);
 
   pop();
 }
