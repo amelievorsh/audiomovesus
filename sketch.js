@@ -1,5 +1,4 @@
 let mic;
-let audioStarted = false;
 
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
