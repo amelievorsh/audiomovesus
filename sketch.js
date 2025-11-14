@@ -29,7 +29,9 @@ function draw() {
   rotateX(frameCount * 0.01);
   rotateY(frameCount * 0.01);
 
-  fill((frameCount * 2) % 20, 100, 100);
+  for (let z = -150; z < 150; z += 2) {
+    fill((z + frameCount*15) % 20, 100, 100);
+  }
   torus(60, amplitude * 120, 20);
 
   pop();
