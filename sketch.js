@@ -29,7 +29,7 @@ function draw() {
   rotateX(frameCount * 0.01);
   rotateY(frameCount * 0.01);
 
-  fill((frameCount * 2) % 360, 100, 100);
+  fill((frameCount * 2) % 20, 100, 100);
   torus(60, amplitude * 120, 20);
 
   pop();
