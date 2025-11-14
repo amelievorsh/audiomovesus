@@ -25,15 +25,15 @@ function draw() {
 
   orbitControl();
 
-    for (let z = -150; z < 150; z += 2) {
-    fill((z + frameCount*15) % 20, 100, 100);
-  }
   
   push();
   rotateZ(frameCount * 0.01);
   rotateX(frameCount * 0.01);
   rotateY(frameCount * 0.01);
-
+  
+  for (let z = -150; z < 150; z += 2) {
+    fill((z + frameCount*15) % 20, 100, 100);
+  }
 
   torus(30, amplitude * 9, 15);
 
